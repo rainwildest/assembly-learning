@@ -17,7 +17,7 @@ codesg segment
 	       mov  bx, 16
 
 	;mov  bp, 280H
-	       mov  bp, 160*10
+	       mov  bp, 160*10 + 32*2
 	       mov  di, 0
 	       mov  si, 0
 
@@ -27,9 +27,9 @@ codesg segment
 	       mov  cx, 16
 	       mov  di, 0
 	       mov  si, 0
-	chars: mov  al, ds:[di]          	;文字
-	       mov  ah, ds:[bx]          	;颜色
-	       mov  es:[bp + si + 64], ax
+	chars: mov  al, ds:[di]      	;文字
+	       mov  ah, ds:[bx]      	;颜色
+	       mov  es:[bp + si], ax
 
 	       inc  di
 	       add  si,2
