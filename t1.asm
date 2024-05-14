@@ -39,14 +39,6 @@ codesg segment
 	         pop  ax
 	         ret
 
-	
-	; ========
-	;  mov ax, 0
-	;  mov al, 160
-	;  mul dh
-	;  mov bx, ax
-	;  =======
-	     
 codesg ends
 
 end start
