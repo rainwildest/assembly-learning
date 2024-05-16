@@ -1,7 +1,7 @@
 assume cs:codesg
 
 codesg segment
-	start: mov  ax, 4243H	; 被除数的低16位
+	start: mov  ax, 4240H	; 被除数的低16位
 	       mov  dx, 000FH	; 被除数的高16位
 	       mov  cx, 0AH  	; 除数
 
