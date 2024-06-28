@@ -52,7 +52,7 @@ codesg segment
 
 	                  mov  ax, 0B800H
 	                  mov  es, ax
-	                  mov  di, 160*15 + 40*2
+	                  mov  di, 160*15 + 32*2
 
 	                  mov  cx,0
 
